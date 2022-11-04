@@ -1,0 +1,414 @@
+*{
+    font-family: 'Maven Pro', sans-serif;
+    color: rgb(110, 183, 212);
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+    /* Comienzo del Menu Nav */
+
+header nav{
+    width: 100%;
+    height: 100px;
+    border-bottom: rgb(110, 183, 212) solid 4px;
+    background: rgb(255, 255, 255) ;
+    
+}
+.nav-img_logo{  
+    width: auto;
+    height: 98px;
+    display: flex; 
+    position: absolute;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    padding: 10px;
+}
+
+.nav-ul_li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+}
+.nav-ul_li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+}
+.nav-carrito-boton{
+    border: #6EB7D4 solid 2px;
+    background: none;
+    border-radius: 15%;
+}
+
+.nav-ul_li img{
+    width: 30px;
+}
+
+/* Fin Menu Nav */
+
+
+/*------------- Comienzo del Contenido -------------*/
+
+/*Carrito*/
+.modal-container {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+} 
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+    background: #ffffff;
+    border: #6EB7D4 solid 3px;
+    border-top: #6EB7D4 solid 4px;
+    border-radius: 0 0 20px 20px;
+    font-size: 20px;
+    position: absolute;
+
+}
+
+.modal-carrito--close{
+    display: flex;
+    justify-content: end;
+}
+#close{
+    border: none;
+    background: none;
+    margin: 7px;
+}
+#close img{
+    width: 20px;  
+}
+
+
+.posicion-productos-carrito{
+    display: flex;
+    justify-content: end;
+    
+}
+.modal-carrito h4{
+    color: #6EB7D4;
+    margin: 10px 5px 15px;
+    text-decoration: underline;
+    font-size: 22px;
+    padding: 0 10px 5px;
+}
+
+
+.productoEnCarrito{
+    color: #6EB7D4;
+    font-size: 15px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-top:#6EB7D4 3px solid;
+}
+.productoEnCarrito:first-child{
+    color: #6EB7D4;
+    font-size: 15px;
+    padding: 5px 10px 10px;
+    margin-bottom: 10px;
+    border-top: none;
+}
+
+.productoEnCarrito-eliminar--sumar button{
+    text-decoration: none;
+    border: none;
+    background: none;
+    margin: 10px 10px 0 10px;
+}
+
+.productoEnCarrito-eliminar--sumar img{
+    width: 15px;
+    text-decoration: none;
+}
+  
+    
+/* Fin carrito de compras */
+
+
+    /* Productos */
+
+/*Botones de ordenar por precio*/
+.div-botones-precios{
+    display: flex;
+    justify-content:center;
+    background-color: #d3e3e9;
+    transition: 1s;
+}
+
+#ordenarMenorPrecio, #ordenarMayorPrecio{
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border: 2px solid #6EB7D4;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+#ordenarMenorPrecio:hover, #ordenarMayorPrecio:hover{
+    background: #e8eff2;
+}
+
+/*Fin de botones de precio*/
+
+.pp-div--productos {
+    margin: 10px;
+}
+
+.pp-div--productos_h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.pp-2div--productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pp-2div--productos div {
+    margin: 20px;
+    border: 1px solid #6EB7D4;
+    border-radius: 20px;
+    background: #6EB7D4;
+    width: 200px;
+    height: 240px;
+}
+
+.pp-2div--productos div img {
+    height: 170px;
+    width: 170px;
+    margin: 10px 15px;
+    border: 0 solid black;
+    border-radius: 75%;
+    object-fit: cover;
+}
+
+.pp-2div--productos div h4 {
+    text-align: center;
+    margin: 10px 7px 2px ;
+    padding: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.pp-2div--productos div h4:hover {
+    background: #d3e3e9;
+    /*color: rgb(255, 255, 255);*/
+}
+
+
+
+/*!------------- COMIENZO PAGINA PRODUCTOS.HTML -------------*/
+
+#p2-div--productos h2{
+    text-align: center;
+    margin: 30px;
+}
+
+.p2-div2--productos{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: content-box;
+}
+.p2-div2--productos div{
+    border: #6EB7D4 5px solid;
+    border-radius: 20px;
+    background: rgb(255, 255, 255) ;
+    height: 340px;
+    width: 200px;
+    margin: 30px;
+}
+.p2-div2--productos div img{
+    height: 160px;
+    width:  180px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: #6EB7D4 3px solid;
+    object-fit: contain;
+}
+.p2-div2--productos div p{
+    margin: 3px
+}
+
+.p2-div2--productos div button{
+   font-size: 17px;
+    margin-top: 20px;
+    border: #6EB7D4 2px solid;
+    width: 100px;
+    height: 30px;
+    transition: 1s;
+}
+.p2-div2--productos div button:hover{
+
+     border-radius: 10px;
+     box-shadow: 1px 0 15px 0 rgb(200, 194, 194);
+ }
+
+
+
+
+
+
+
+
+
+
+
+/*!------------- FIN PAGINA PRODUCTOS.HTML -------------*/
+
+
+
+
+
+
+/*!------------- COMIENZO PAGINA CONTACTO.HTML -------------*/
+
+
+.contacto-h2{
+    text-align: center;
+    margin: 20px 0 50px;
+    padding-top: 20px;
+    border-top: 30px solid #d3e3e9;
+}
+
+
+.div-contacto-form{
+    margin: 20px 0 0;
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.div-contacto-form h3{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration:underline;
+}
+.div-contacto-form h4{
+    font-size: 18px;
+}
+
+
+.div2-contacto-form div{
+    margin-top: 8px;
+}
+.div2-contacto-form div input{
+    color: rgb(0, 0, 0);
+}
+
+#email{
+    width: 344px;
+}
+
+.div-contacto-form div textarea{
+    height: 150px;
+    width:500px;
+    color: rgb(0, 0, 0);
+}
+.div-contacto--terminos label{
+    font-size: 14px;
+}
+
+#boton-contacto{
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    text-align: center;
+    border-color: #6EB7D4;
+    transition:1s
+}
+.div-contacto--submit{
+    text-align: center;
+}
+#boton-contacto:hover{
+    box-shadow: 2px 2px rgb(202, 201, 201);
+}
+
+
+
+
+
+
+
+
+/*!------------- FIN PAGINA CONTACTO.HTML -------------*/
+
+
+
+
+
+
+
+/*
+
+
+
+    /* Comienzo del Footer Nav */
+
+footer, footer nav{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    bottom: 0;
+    position: absolute;
+    border-top: rgb(110, 183, 212) solid 4px;
+    background: rgb(240, 246, 248) ;
+}
+.footer-div{
+    width:25%;
+    padding: 10px;
+    box-sizing: border-box;   
+}
+
+.footer-div h4{
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.footer-div li, .footer-div4 li{
+    text-align: center;
+}
+
+.footer-div ul li a{
+    font-size: 12px;
+}
+
+.footer-div4{
+    padding: 10px 40px 0 0;
+}
+.footer-div4 ul {
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer-div4 ul li img{
+    height: 25px;
+    margin-top: 10px;
+} 

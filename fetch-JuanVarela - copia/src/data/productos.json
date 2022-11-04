@@ -1,0 +1,94 @@
+[
+    {
+        "id":1,
+        "nombre":"Dog Chow",
+        "mascota":"perro",
+        "descripcion":"Adulto, Razas grandes",
+        "peso":"15kg",
+        "precio":5500,
+        "img":"../public/img/Bolsas_alimentos/dog_chow-adultosmedianosygrandes-15kg.jpg",
+        "cantidad":1
+    },{
+        "id":2,
+        "nombre":"Eukanuba",
+        "mascota":"perro",
+        "descripcion":"Adulto, Raza mediana",
+        "peso":"15kg",
+        "precio":10059,
+        "img":"../public/img/Bolsas_alimentos/eukanuba-razasgrandes-15kg.jpg",
+        "cantidad":1
+    },{
+        "id":3,
+        "nombre":"Pedigree",
+        "mascota":"perro",
+        "descripcion":"Carne, pollo y cereales",
+        "peso":"21kg",
+        "precio":6700,
+        "img":"../public/img/Bolsas_alimentos/pedigree-adulto-24kg.jpg",
+        "cantidad":1
+    },{
+        "id":4,
+        "nombre":"ProPlan",
+        "mascota":"perro",
+        "descripcion":"Cachorro,raza mediana",
+        "peso":"15kg",
+        "precio":11800,
+        "img":"../public/img/Bolsas_alimentos/proplan-razasmedianasygrandes-15kg.jpg",
+        "cantidad":1
+    },{
+        "id":5,
+        "nombre":"Purina Excellent",
+        "mascota":"perro",
+        "descripcion":"Adultos sabor carne",
+        "peso":"15kg",
+        "precio":7500,
+        "img":"../public/img/Bolsas_alimentos/purinaexcellent-adultos.jpg",
+        "cantidad":1
+    },{
+        "id":6,
+        "nombre":"Royal Canin",
+        "mascota":"perro",
+        "descripcion":"Alimento para adultos",
+        "peso":"20kg",
+        "precio":7365,
+        "img":"../public/img/Bolsas_alimentos/royalcanin-puppymini-10kg.png",
+        "cantidad":1
+    },{
+        "id":7,
+        "nombre":"VitalCan",
+        "mascota":"perro",
+        "descripcion":"perro adulto premium",
+        "peso":"20kg",
+        "precio":5150,
+        "img":"../public/img/Bolsas_alimentos/vitalcan-adulto-razasmedianasygrandespollo.jpg",
+        "cantidad":1
+    },{
+        "id":8,
+        "nombre":"Whiskas",
+        "mascota":"gato",
+        "descripcion":"Adulto sabor pescado",
+        "peso":"10kg",
+        "precio":4500,
+        "img":"../public/img/Bolsas_alimentos/whiskas-1+-3,8kg.jpg",
+        "cantidad":1
+    },{
+        "id":9,
+        "nombre":"Catchow",
+        "mascota":"gato",
+        "descripcion":"Adulto sabor pescado",
+        "peso":"15kg",
+        "precio":7800,
+        "img":"../public/img/Bolsas_alimentos/catchow-adultos-polloypescado.jpg",
+        "cantidad":1
+    },{
+        "id":10,
+        "nombre":"Iams",
+        "mascota":"gato",
+        "descripcion":"Adulto, sabor a pollo",
+        "peso":"15kg",
+        "precio":11300,
+        "img":"../public/img/Bolsas_alimentos/Iams-adulto-pollo.jpg",
+        "cantidad":1
+    }
+
+]

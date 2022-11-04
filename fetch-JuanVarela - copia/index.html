@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/estilos.css" />
+    <!-- CDN sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CDN toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <title>FelCan</title>
+</head>
+<body>
+    <!-- Comienzo del Menu Nav -->
+
+    <header>
+        <nav>
+          <ul>
+            <li class="nav-img_logo">
+              <img src="./public/img/logo/logo.jpg" alt="FelCan" />
+            </li>
+          </ul>
+          <ul class="nav-ul">
+            <li class="nav-ul_li"><a href="#">Inicio</a></li>
+            <li class="nav-ul_li"><a href="#">Productos</a></li>
+            <li class="nav-ul_li"><a href="#">Locales</a></li>
+            <li class="nav-ul_li"><a href="#contact-form">Contacto</a></li>
+            <li class="nav-ul_li">
+              <button class="nav-carrito-boton" id="open" href="#"><img src="./public/img/carrito_compras/carrito-de-compras.png" alt=""><span id="contador-carrito">0</span></button>
+            </li>
+          </ul>
+           
+          <div class="posicion-productos-carrito">
+            <div class="modal-container" id="modal-contenedor">
+              <div class="modal-carrito">
+                <button id="close" class="modal-carrito--close">    
+                <h4>Carrito de compras</h4>
+              
+                  <img src="./public/img/carrito_compras/close.png"alt="">
+                </button>  
+                <div id="carrito-contenedor">
+
+                </div>
+                <div>
+                  <p>Precio Total:$<span id="precioTotal"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+     
+
+
+
+      <main id="p2-div--productos">
+        <h2>Productos</h2>
+        <div class="div-botones-precios">
+          <div>
+            <button type="button" id="ordenarMenorPrecio">Ordenar de mayor a menor precio</button>
+          </div>
+          <div>
+            <button type="button" id="ordenarMayorPrecio">Ordenar de mayor a menor precio</button>
+          </div>
+        </div>
+      </main>
+
+      <h2 class="contacto-h2">Nuestro Contacto</h2>
+
+
+      <div class="div-contacto-form">      
+        <form  id="contact-form">
+           <h3>Formulario</h3>
+          <h4>Ingrese sus datos para realizar su consulta!</h4>
+          <div class="div2-contacto-form">
+            <div>
+              <label for="firstName">Nombre</label>
+              <input autofocus type="text" id="firstName" placeholder="Juan" required>
+              
+              <label for="lastName">Apellido</label>
+              <input type="text" id="lastName" placeholder="Perez" required>
+            </div>
+  
+            <div>
+              <label for="email">Correo Electronico</label>
+              <input type="text" id="email" placeholder="correo@electronico.com" required>
+            </div>
+  
+            <div>
+              <label for="dateTime">Fecha de nacimiento</label>
+              <input type="date" id="dateTime" required>
+            </div>
+  
+            <div>
+              <label for="consult">Escriba su consulta</label>
+              <br>
+              <textarea id="consult" placeholder="escriba aqui..." required></textarea>
+            </div>
+  
+            <div class="div-contacto--terminos">
+              <label for="terminos">Aceptar terminos y condiciones</p>
+              <input type="checkbox" id="terminos" required>
+            </div>
+  
+            <div class="div-contacto--submit">
+              <button type="submit" id="boton-contacto" value="Enviar">Enviar</button>
+            </div>
+        </form>
+      </div>
+  
+      <!-- Fin del Menu Nav -->
+
+      
+      <script src="./src/carrito.js" type="module"></script>
+      <script src="./src/accionesCarrito.js" type="module"></script>
+      <script src="./src/storage.js" type="module"></script>
+      <script src="./src/obtenerProductos.js" type="module"></script>
+      <script src="./app.js" type="module"></script>
+      <script src="./index.js" type="module"></script>
+
+
+
+</body>
+</html>
